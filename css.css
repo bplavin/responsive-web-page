@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  line-height: 1.5;
+}
+
+/*Header paragraph*/
+.main-header {
+  width: 100%;
+  padding: 15px 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo {
+  width: 100%;
+}
+.header-img {
+  float: right;
+}
+
+/*Header Section*/
+.main-section {
+  width: 100%;
+
+  background-image: url("https://cdn2.hubspot.net/hubfs/2500081/Lander/Banner.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-container {
+  padding: 100px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.section-footer {
+  padding: 20px;
+  font-size: 16px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
+}
+.section-paragraph h1 {
+  padding-bottom: 15px;
+  color: white;
+  font-size: 45px;
+  line-height: 1.2;
+}
+.section-paragraph p {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: rgb(245,245,245);
+  opacity: 0.9;
+}
+.footer-input {
+  padding: 0px 20px 0px;
+}
+.footer-input p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+.input-elements {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 0px;
+  line-height: 1.5;
+}
+.input-elements input[type='text'],
+.input-elements input[type='email'] {
+  height: 50px;
+  margin: 10px 0px 0px;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+.input-btn {
+  height: 50px;
+  margin: 10px 0px 0px;
+  background-color: #e24548;
+  color: white;
+}
+/*Middle section*/
+.middle-section {
+  width: 100%;
+  padding: 100px 30px;
+}
+.middle-section h1 {
+  padding: 20px 0px 15px;
+  font-weight: 600;
+}
+.middle-section p {
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.middle-img {
+  width: 70%;
+}
+.iphone {
+  width: 100%;
+  padding: 10px 0px;
+}
+/*Engagement section*/
+.engagement-section {
+  width: 100%;
+  padding: 120px 30px;
+  background: #fcfaf8;
+  text-align: center;
+}
+.engagement-section h1 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.engagement-section p {
+  padding: 10px 0px;
+  line-height: 1.6;
+}
+.engagement-pic1 {
+  width: 100%;
+}
+.engagement-pic2 {
+  width: 100%;
+}
+.engagement-pic3 {
+  width: 100%;
+  border: 0px;
+  border-width: 0px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+/*Footer section*/
+.footer {
+  width: 100%;
+  padding: 100px 0px;
+  background: #e24548;
+  text-align: center;
+}
+.footer-img {
+  width: 60%;
+}
+.company-credentials {
+  width: 100%;
+  padding: 50px 0px;
+  text-align: center;
+
+}
