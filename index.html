@@ -6,6 +6,7 @@
 
   <title>The HTML5 Herald</title>
   <link rel="stylesheet" href="css.css">
+  <script src="js.js"></script>
   <meta name='viewport'
         content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 </head>
@@ -85,5 +86,26 @@
 
 <div class="company-credentials">
   <p>© 2020 Inbound Pixels</p>
+</div>
+
+<button class="open-chat" onclick="openChat()"></button>
+<div class="chat-popup" id="chat">
+  <div class="widget-line"></div>
+  <div class="chat-container" >
+    <form>
+      <div class="chat-support">
+      <img class="form-img" src="https://visualpharm.com/assets/711/Online%20Support-595b40b65ba036ed117d154a.svg">
+      <p>Support</p>
+      <button class="close-chat" onclick="closeChat()">
+        <img src="https://cdn.onlinewebfonts.com/svg/img_261791.png" width="16" height="16">
+      </button>
+      </div>
+      <div class="chat-footer">
+      <p class="chat-paragraph">We have just recently finished our best Hubspot theme ever. HubStrap Is a 100% Drag and Drop Builder theme. Go to Hubstrap.pro to learn more</p>
+      <textarea placeholder="Reply to Support"></textarea>
+      <p class="bottom-line">Chat ⚡ by Drift</p>
+      </div>
+    </form>
+  </div>
 </div>
 </body>
