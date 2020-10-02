@@ -1,12 +1,21 @@
 <!doctype html>
 
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
   <title>The HTML5 Herald</title>
   <link rel="stylesheet" href="css.css">
-  <script src="js.js"></script>
+  <script>
+  function openChat() {
+    document.getElementById("chat").style.display = "block";
+  }
+
+  function closeChat() {
+    document.getElementById("chat").style.display = "none";
+  }
+  </script>
   <meta name='viewport'
         content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 </head>
@@ -18,7 +27,7 @@
     <div>
      <a href="#">
       <img class="logo" src='https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/LandingPage.png?width=523&name=LandingPage.png'/>
-      <img class="header-img" src='https://no-cache.hubspot.com/cta/default/2500081/48987bdb-8df0-4730-bef7-75313f843648.png'/>
+      <button class="header-button">CALL TO ACTION</button>
       </a>
     </div>
   </div>
@@ -35,11 +44,15 @@
     </div>
 
     <div class='section-footer'>
-      <div class="footer-input">
+      <div class="footer-container">
+        <div class="first-segment">
         <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/laptop.png?width=64&name=laptop.png">
         <p>Sign-up to receive a complimentary landing page.</p>
+      </div>
+      <div class="second-segment">
         <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/set-square.png?width=64&name=set-square.png">
         <p>Get exclusive access to our library of personalized content.</p>
+      </div>
 
     <div class="input-elements">
       <input type='text' placeholder='Company Name'/>
@@ -52,32 +65,39 @@
 </section>
 
 <section class="middle-section">
-  <div>
+  <div class="middle-section-header">
     <h1>Landing Pages Are About More Than Great Design</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
        nisi ut aliquip ex ea commodo consequat.<p>
   </div>
-  <div>
+  <div class="middle-images">
     <img class="middle-img" src="https://no-cache.hubspot.com/cta/default/2500081/48987bdb-8df0-4730-bef7-75313f843648.png" alt="Call To Action">
     <img class="iphone" src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/iphone.png?width=917&name=iphone.png">
   </div>
 </section>
 
 <section class="engagement-section">
-  <div>
+  <div class="engagement-container">
+    <div>
     <img class="engagement-pic1" src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/clicks.png?width=500&name=clicks.png">
     <h1>Improves Clicks</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
+    <div>
     <img class="engagement-pic2" src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/photo.png?width=500&name=photo.png">
     <h1>Powerful Photography</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
+    <div>
     <img class="engagement-pic3" src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/color.png?width=500&name=color.png">
     <h1>Utilizes Color</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
 </section>
 
 <footer class="footer">
