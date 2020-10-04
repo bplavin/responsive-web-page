@@ -1,3 +1,12 @@
+/* 
+  Make sizes similar to layout sizes (for mobile, tablet, desktop)
+  Leave percentage for images
+
+  - 770px is a change point (not 960px)
+
+  https://chrome.google.com/webstore/detail/edge-the-web-ruler/njlkegdphefeellhaongiopcfgcinikh
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,30 +17,32 @@
 }
 
 /*Header paragraph*/
+
 .main-header {
   display: flex;
   width: 100%;
   padding: 15px 30px 15px;
-
 }
+
 .logo {
   width: 100%;
 }
+
 .header-button {
   float: right;
   padding: 20px 40px;
   font-size: 17px;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  background: rgb(226,69,72);
+  background: rgb(226, 69, 72);
   border-width: 0px;
   border-radius: 35px;
 }
 
 /*Header Section*/
+
 .main-section {
   width: 100%;
-
   background-image: url("https://cdn2.hubspot.net/hubfs/2500081/Lander/Banner.jpg");
   background-size: auto;
   background-position: center;
@@ -43,106 +54,130 @@
   padding: 100px 30px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .section-footer {
   padding: 20px;
   color: white;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0.9;
 }
+
 .section-paragraph h1 {
   padding-bottom: 15px;
   font-size: 45px;
   line-height: 1.2;
   color: white;
 }
+
 .section-paragraph p {
   padding-bottom: 15px;
   font-size: 20px;
-  color: rgb(245,245,245);
+  color: rgb(245, 245, 245);
   opacity: 0.9;
 }
+
 .footer-container {
   padding: 0px 20px 0px;
 }
+
 .footer-input p {
   font-size: 18px;
 }
+
 .input-elements {
   display: flex;
   flex-direction: column;
   padding: 10px 0px 0px;
   line-height: 1.5;
 }
-.input-elements input[type='text'],
-.input-elements input[type='email'] {
+
+.input-elements input[type='text'], .input-elements input[type='email'] {
   height: 50px;
   margin: 15px 0px 0px;
   padding: 0px 10px;
   font-size: 15px;
 }
+
 .input-btn {
   height: 50px;
   margin: 15px 0px 0px;
   background-color: #e24548;
   color: white;
 }
-/*Middle section*/
+
+/*******************************  Middle section  *************************/
+
 .middle-section {
   width: 100%;
   padding: 100px 30px;
 }
+
 .middle-section h1 {
   padding: 20px 0px 15px;
   font-size: 24px;
   font-weight: 600;
 }
+
 .middle-section p {
   padding-bottom: 15px;
   line-height: 1.7;
 }
+
 .middle-img {
   width: 70%;
 }
+
 .iphone {
   width: 100%;
   padding: 10px 0px;
 }
-/*Engagement section*/
+
+/******************************* Engagement section *********************************/
+
 .engagement-section {
   width: 100%;
   padding: 120px 30px;
   background: #fcfaf8;
   text-align: center;
 }
+
 .engagement-section h1 {
   padding-top: 10px;
   font-size: 20px;
 }
+
 .engagement-section p {
   padding: 10px 0px;
 }
+
 .engagement-pic1 {
   width: 100%;
 }
+
 .engagement-pic2 {
   width: 100%;
 }
+
 .engagement-pic3 {
   width: 100%;
   border: 0px;
   border-width: 0px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
-/*Footer section*/
+
+/******************************* Footer section ************************************/
+
 .footer {
   width: 100%;
   padding: 100px 0px;
   background: #e24548;
   text-align: center;
 }
+
 .footer-img {
   width: 60%;
 }
+
 .company-credentials {
   width: 100%;
   padding: 50px 0px;
@@ -151,22 +186,21 @@
 
 /*Popup Chat*/
 
-.open-chat{
+.open-chat {
   position: fixed;
   right: 15px;
   height: 60px;
   width: 60px;
   bottom: 0;
-
   border: 3px solid #f1f1f1;
   border-radius: 50%;
-
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiAIeUvzCeCYyg1lTaRSbS7YgXpGXQk9cOAQ&usqp=CAU");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .close-chat {
   position: relative;
   bottom: -25px;
@@ -176,22 +210,26 @@
   opacity: 0.7;
   border: none;
 }
+
 .chat-popup {
   display: none;
   position: fixed;
   bottom: 0px;
   background-color: white;
 }
+
 .widget-line {
   position: absolute;
   height: 8px;
   width: 100%;
   background-color: rgb(33, 197, 217);
 }
+
 .chat-container {
   padding: 10px;
   font-size: 14px;
 }
+
 .chat-support {
   display: flex;
   position: relative;
@@ -199,6 +237,7 @@
   justify-content: space-between;
   color: #687882;
 }
+
 .form-img {
   position: relative;
   bottom: 15px;
@@ -207,6 +246,7 @@
   border-radius: 50%;
   background: rgb(33, 197, 217);
 }
+
 .chat-support p {
   position: relative;
   top: 30px;
@@ -214,6 +254,7 @@
   margin-bottom: 10px;
   font-size: 12px;
 }
+
 .chat-footer textarea {
   width: 100%;
   margin: 10px 0px;
@@ -222,222 +263,219 @@
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+
 .chat-paragraph {
   position: relative;
   bottom: 15px;
   color: #414141;
 }
+
 .bottom-line {
   position: relative;
   text-align: center;
   color: #687882;
 }
 
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-.logo {
-  width: 25%;
-}
-.header-button {
-  height: 90px;
-  width: 160px;
-  margin-left: 20px;
-}
-.section-container {
-  display: flex;
-}
-.section-paragraph h1 {
-  width: 60%;
-}
-.section-paragraph p {
-  width: 60%;
-}
-.first-segment {
-  display: flex;
+@media only all and (min-width: 401px) and (max-width: 960px) {
+  .logo {
+    width: 25%;
   }
-.second-segment {
-  display: flex;
-}
-.footer-container img {
-  height: 30px;
-  width: 30px;
-  margin-right: 20px;
-}
-.footer-container p {
-  width: 70%;
-  line-height: 1.6;
-  font-size: 18px;
-}
-.middle-section {
-  width: 40%;
-}
-.middle-section h1 {
-  font-size: 24px;
-}
-.middle-section p {
-  width: 90%;
-}
-.middle-images {
-  height: 150px;
-}
-.middle-img {
-  width: 90%;
-}
-.iphone {
-  position: relative;
-  bottom: 290px;
-  left: 300px;
-  width: 400px;
-}
-.engagement-container {
-  display: flex;
-}
-.engagement-container div {
-  margin: 0px 10px;
-}
-.footer-img {
-  width: 30%;
-}
-
-/* Chat-widget */
-
-.chat-popup {
-  position: fixed;
-  left: 400px;
-  bottom: 80px;
-  width: 45%;
-  border-radius: 5px;
-}
-.chat-paragraph {
-  position: relative;
-  bottom: 15px;
-  padding: 0px 10px;
-  font-size: 14px;
-  color: #414141;
-  opacity: 0.9;
-}
-.chat-footer textarea {
-  display: flex;
-  padding: 10px 10px 0px;
-  height: 40px;
-  margin-bottom: 10px;
-  line-height: inherit;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-}
-
-@media only screen and (min-width: 961px) {
-.main-header {
-  display: block;
-  padding: 15px 100px 10px;
-}
-.logo {
-  width: 25%;
-}
-.section-container {
-  display: flex;
-  padding: 100px;
-}
-.section-paragraph {
-  width: 50%;
-}
-.section-paragraph h1 {
-  width: 70%;
-}
-.section-paragraph p {
-  width: 70%;
-}
-.section-footer {
-  width: 40%;
-  margin-left: 100px;
-}
-.footer-container {
-  font-size: 18px;
-}
-.first-segment {
-  display: flex;
-  margin-bottom: 10px;
-}
-.first-segment p {
-  font-weight: 100;
-  width: 70%;
-}
-.first-segment img {
-  height: 50px;
-  width: 50px;
-  margin-right: 40px;
-}
-.second-segment {
-  display: flex;
-}
-.second-segment img {
-  height: 50px;
-  width: 50px;
-  margin-right: 40px;
+  .header-button {
+    height: 90px;
+    width: 160px;
+    margin-left: 20px;
+  }
+  .section-container {
+    display: flex;
+  }
+  .section-paragraph h1 {
+    width: 60%;
+  }
+  .section-paragraph p {
+    width: 60%;
+  }
+  .first-segment {
+    display: flex;
+  }
+  .second-segment {
+    display: flex;
+  }
+  .footer-container img {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+  }
+  .footer-container p {
+    width: 70%;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .middle-section {
+    width: 40%;
+  }
+  .middle-section h1 {
+    font-size: 24px;
+  }
+  .middle-section p {
+    width: 90%;
+  }
+  .middle-images {
+    height: 150px;
+  }
+  .middle-img {
+    width: 90%;
+  }
+  .iphone {
+    position: relative;
+    /* it shouldn't be relative. You can wrap the image in the div and use flex to correctly position it */
+    bottom: 290px;
+    left: 300px;
+    width: 400px;
+  }
+  .engagement-container {
+    display: flex;
+  }
+  .engagement-container div {
+    margin: 0px 10px;
+  }
+  .footer-img {
+    width: 30%;
+  }
+  /* Chat-widget */
+  .chat-popup {
+    position: fixed;
+    left: 400px;
+    bottom: 80px;
+    width: 45%;
+    border-radius: 5px;
+  }
+  .chat-paragraph {
+    position: relative;
+    bottom: 15px;
+    padding: 0px 10px;
+    font-size: 14px;
+    color: #414141;
+    opacity: 0.9;
+  }
+  .chat-footer textarea {
+    display: flex;
+    padding: 10px 10px 0px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: inherit;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
 }
 
-.middle-section {
-  width: 50%;
-  padding: 100px 0px 0px 100px;
-}
-.middle-section-header {
-  width: 50%;
-}
-.middle-section h1 {
-  width: 110%;
-  font-size: 24px;
-  font-weight: 600;
-}
-.middle-section p {
-  width: 120%;
-}
-.middle-images {
-  height: 150px;
-}
-.middle-img {
-  width: 40%;
-}
-.iphone {
-  position: relative;
-  bottom: 270px;
-  left: 440px;
-  width: 580px;
-}
-.engagement-section {
+@media only all and (min-width: 961px) {
+  .main-header {
+    display: block;
+    padding: 15px 100px 10px;
+  }
+  .logo {
+    width: 25%;
+  }
+  .section-container {
+    display: flex;
     padding: 100px;
-}
-.engagement-container {
-  display: flex;
-}
-.engagement-container div {
-  margin: 0px 10px;
-}
-.footer-img {
+  }
+  .section-paragraph {
+    width: 50%;
+  }
+  .section-paragraph h1 {
+    width: 70%;
+  }
+  .section-paragraph p {
+    width: 70%;
+  }
+  .section-footer {
+    width: 40%;
+    margin-left: 100px;
+  }
+  .footer-container {
+    font-size: 18px;
+  }
+  .first-segment {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .first-segment p {
+    font-weight: 100;
+    width: 70%;
+  }
+  .first-segment img {
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+  }
+  .second-segment {
+    display: flex;
+  }
+  .second-segment img {
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+  }
+  .middle-section {
+    width: 50%;
+    padding: 100px 0px 0px 100px;
+  }
+  .middle-section-header {
+    width: 50%;
+  }
+  .middle-section h1 {
+    width: 110%;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .middle-section p {
+    width: 120%;
+  }
+  .middle-images {
+    height: 150px;
+  }
+  .middle-img {
+    width: 40%;
+  }
+  .iphone {
+    position: relative;
+    bottom: 270px;
+    left: 440px;
+    width: 580px;
+  }
+  .engagement-section {
+    padding: 100px;
+  }
+  .engagement-container {
+    display: flex;
+  }
+  .engagement-container div {
+    margin: 0px 10px;
+  }
+  .footer-img {
     width: 15%;
-}
-
-/* Chat-widget */
-
-.chat-popup {
-  display: none;
-  position: fixed;
-  left: 860px;
-  bottom: 80px;
-  width: 30%;
-  border-radius: 5px;
-}
-.chat-paragraph {
-  bottom: 15px;
-  padding: 0px 10px;
-  font-size: 14px;
-}
-.chat-footer textarea {
-  display: flex;
-  padding: 10px 10px 0px;
-  height: 40px;
-}
-.bottom-line {
-  font-size: 12px;
-}
+  }
+  /* Chat-widget */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    left: 860px;
+    bottom: 80px;
+    width: 30%;
+    border-radius: 5px;
+  }
+  .chat-paragraph {
+    bottom: 15px;
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  .chat-footer textarea {
+    display: flex;
+    padding: 10px 10px 0px;
+    height: 40px;
+  }
+  .bottom-line {
+    font-size: 12px;
+  }
 }
