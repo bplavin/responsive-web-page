@@ -22,14 +22,11 @@
 
 <body>
 
-  <header>
-    <div class="main-header">
-      <!-- why redundant divs here? -->
-      <div>
-        <img class="logo"
-          src='https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/LandingPage.png?width=523&name=LandingPage.png' />
-        <button class="header-button">CALL TO ACTION</button>
-      </div>
+  <header class="main-header">
+    <div>
+      <img class="logo"
+        src='https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/LandingPage.png?width=523&name=LandingPage.png' />
+      <button class="header-button">CALL TO ACTION</button>
     </div>
   </header>
 
@@ -43,41 +40,38 @@
           nisi ut aliquip ex ea commodo consequat.</p>
       </div>
 
-      <div class='section-footer'>  <!-- section-form -->
-        <div class="footer-container">
-          <div class="first-segment">
-            <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/laptop.png?width=64&name=laptop.png">
-            <p>Sign-up to receive a complimentary landing page.</p>
-          </div>
-          <div class="second-segment">
-            <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/set-square.png?width=64&name=set-square.png">
-            <p>Get exclusive access to our library of personalized content.</p>
-          </div>
-
-          <div class="input-elements">  <!-- it should be form element https://www.w3schools.com/html/html_forms.asp -->
-            <input type='text' placeholder='Company Name' />
-            <input type='email' placeholder='Email' />
-            <button class="input-btn">Submit</button>
-          </div>
+      <div class='section-footer'>
+        <div class="first-segment">
+          <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/laptop.png?width=64&name=laptop.png">
+          <p>Sign-up to receive a complimentary landing page.</p>
         </div>
+        <div class="second-segment">
+          <img src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/set-square.png?width=64&name=set-square.png">
+          <p>Get exclusive access to our library of personalized content.</p>
+        </div>
+
+        <form class="input-elements">
+          <input type='text' placeholder='Company Name' />
+          <input type='email' placeholder='Email' />
+          <input type='submit' class="input-btn" />
+        </form>
       </div>
     </div>
   </section>
 
   <section class="middle-section">
     <div class="middle-section-header">
-      <h1>Landing Pages Are About More Than Great Design</h1>
+      <h2>Landing Pages Are About More Than Great Design</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat.
-      <p>
+      </p>
     </div>
+
+    <button class="middle-section-btn">CALL TO ACTION</button>
+
     <div class="middle-images">
-      <!-- it should be button/a with the text inside (capitalized) not img -->
-      <img class="middle-img"  
-        src="https://no-cache.hubspot.com/cta/default/2500081/48987bdb-8df0-4730-bef7-75313f843648.png"
-        alt="Call To Action">
       <img class="iphone" src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/iphone.png?width=917&name=iphone.png">
     </div>
   </section>
@@ -87,7 +81,7 @@
       <div>
         <img class="engagement-pic1"
           src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/clicks.png?width=500&name=clicks.png">
-        <h1>Improves Clicks</h1> <!-- only one h1 can be used on the page https://www.w3schools.com/tags/tag_hn.asp -->
+        <h3>Improves Clicks</h3> <!-- only one h1 can be used on the page https://www.w3schools.com/tags/tag_hn.asp -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
@@ -96,7 +90,7 @@
       <div>
         <img class="engagement-pic2"
           src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/photo.png?width=500&name=photo.png">
-        <h1>Powerful Photography</h1>
+        <h4>Powerful Photography</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
@@ -105,7 +99,7 @@
       <div>
         <img class="engagement-pic3"
           src="https://cdn2.hubspot.net/hub/2500081/hubfs/Lander/color.png?width=500&name=color.png">
-        <h1>Utilizes Color</h1>
+        <h5>Utilizes Color</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
@@ -114,20 +108,32 @@
   </section>
 
   <footer class="footer">
-    <img class="footer-img"
-      src="https://no-cache.hubspot.com/cta/default/2500081/82a28f4b-6d03-402e-bb20-0a97d0613dcc.png">
+    <button class="footer-button">CALL TO ACTION</button>
   </footer>
 
   <div class="company-credentials">
     <p>© 2020 Inbound Pixels</p>
     <!-- popup icon -->
     <div>
-      <svg class="drift-default-icon drift-default-icon--chat-outline-1" width="24" height="24" viewBox="0 0 25 25"><path fill="black" d="M22.814 12.25h-1.362v3.063a1.02 1.02 0 0 1-1.744.72L15.92 12.25H11.92c-.94 0-1.703-.785-1.703-1.75V1.75c0-.965.764-1.75 1.703-1.75h10.896c.938 0 1.702.785 1.702 1.75v8.75c0 .965-.764 1.75-1.702 1.75zm-.34-10.208H12.257v8.166h4.086a1.032 1.032 0 0 1 .723.3l2.342 2.34v-1.62c0-.562.456-1.02 1.02-1.02h2.043V2.042zM8.17 10.208h-6.13v8.167h2.044c.564 0 1.022.457 1.022 1.02v1.62l2.34-2.34a1.022 1.022 0 0 1 .724-.3h4.086V14.29a1.02 1.02 0 0 1 2.043 0v4.377c0 .965-.763 1.75-1.702 1.75H8.595L4.808 24.2a1.022 1.022 0 0 1-1.743-.72v-3.063H1.702c-.938 0-1.702-.785-1.702-1.75v-8.75c0-.965.764-1.75 1.702-1.75h6.47a1.022 1.022 0 0 1 0 2.04z"></path></svg>
-      <svg width="16" height="16" viewBox="0 0 16 16"><path fill="#9DA9B0" fill-rule="evenodd" d="M8 16c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM8 1.333A6.674 6.674 0 0 0 1.333 8 6.674 6.674 0 0 0 8 14.667 6.674 6.674 0 0 0 14.667 8 6.674 6.674 0 0 0 8 1.333zm0 12c-1.942 0-3.705-1.167-4.601-3.046A.666.666 0 1 1 4.6 9.713C5.275 11.123 6.577 12 8 12c1.431 0 2.733-.875 3.397-2.285a.666.666 0 1 1 1.206.57c-.886 1.88-2.65 3.048-4.603 3.048zM10.667 8a1.335 1.335 0 0 1-1.334-1.333 1.335 1.335 0 0 1 2.667 0C12 7.402 11.402 8 10.667 8zM5.333 8A1.335 1.335 0 0 1 4 6.667c0-.736.599-1.334 1.333-1.334a1.335 1.335 0 0 1 0 2.667z"></path></svg>
+
+      <svg width="16" height="16" viewBox="0 0 16 16">
+        <path fill="#9DA9B0" fill-rule="evenodd"
+          d="M8 16c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM8 1.333A6.674 6.674 0 0 0 1.333 8 6.674 6.674 0 0 0 8 14.667 6.674 6.674 0 0 0 14.667 8 6.674 6.674 0 0 0 8 1.333zm0 12c-1.942 0-3.705-1.167-4.601-3.046A.666.666 0 1 1 4.6 9.713C5.275 11.123 6.577 12 8 12c1.431 0 2.733-.875 3.397-2.285a.666.666 0 1 1 1.206.57c-.886 1.88-2.65 3.048-4.603 3.048zM10.667 8a1.335 1.335 0 0 1-1.334-1.333 1.335 1.335 0 0 1 2.667 0C12 7.402 11.402 8 10.667 8zM5.333 8A1.335 1.335 0 0 1 4 6.667c0-.736.599-1.334 1.333-1.334a1.335 1.335 0 0 1 0 2.667z">
+        </path>
+      </svg>
     </div>
   </div>
 
-  <button class="open-chat" onclick="openChat()"></button>
+  <button class="open-chat" onclick="openChat()">
+    <div>
+      <svg id="chat-icon" class="drift-default-icon drift-default-icon--chat-outline-1" width="24" height="24"
+        viewBox="0 0 25 25">
+        <path fill="white"
+          d="M22.814 12.25h-1.362v3.063a1.02 1.02 0 0 1-1.744.72L15.92 12.25H11.92c-.94 0-1.703-.785-1.703-1.75V1.75c0-.965.764-1.75 1.703-1.75h10.896c.938 0 1.702.785 1.702 1.75v8.75c0 .965-.764 1.75-1.702 1.75zm-.34-10.208H12.257v8.166h4.086a1.032 1.032 0 0 1 .723.3l2.342 2.34v-1.62c0-.562.456-1.02 1.02-1.02h2.043V2.042zM8.17 10.208h-6.13v8.167h2.044c.564 0 1.022.457 1.022 1.02v1.62l2.34-2.34a1.022 1.022 0 0 1 .724-.3h4.086V14.29a1.02 1.02 0 0 1 2.043 0v4.377c0 .965-.763 1.75-1.702 1.75H8.595L4.808 24.2a1.022 1.022 0 0 1-1.743-.72v-3.063H1.702c-.938 0-1.702-.785-1.702-1.75v-8.75c0-.965.764-1.75 1.702-1.75h6.47a1.022 1.022 0 0 1 0 2.04z">
+        </path>
+      </svg>
+    </div>
+  </button>
   <!-- 
     - popup is shifted left, align it with a button 
     - add shadow at the bottom
@@ -138,7 +144,8 @@
     <div class="widget-line"></div>
     <div class="chat-container">
       <form>
-        <div class="chat-support"> <!-- add white border -->
+        <div class="chat-support">
+          <!-- add white border -->
           <img class="form-img" src="https://visualpharm.com/assets/711/Online%20Support-595b40b65ba036ed117d154a.svg">
           <p>Support</p>
           <button class="close-chat" onclick="closeChat()">
@@ -149,7 +156,11 @@
           <p class="chat-paragraph">We have just recently finished our best Hubspot theme ever. HubStrap Is a 100% Drag
             and Drop Builder theme. Go to Hubstrap.pro to learn more</p>
           <textarea placeholder="Reply to Support"></textarea>
-          <p class="bottom-line">Chat ⚡ by Drift</p>
+          <div class="bottom-line">Chat <svg class="drift-default-icon drift-default-icon--bolt" width="12" height="12"
+              viewBox="0 0 8 14">
+              <path fill="#FEF79E" fill-rule="evenodd" stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width=".938" d="M4.256 5.777h3.65L.716 15.935l2.721-7.927H.14l6.503-10.08-2.387 7.849z"></path>
+            </svg> by Drift</div>
         </div>
       </form>
     </div>

@@ -6,22 +6,28 @@
 
   https://chrome.google.com/webstore/detail/edge-the-web-ruler/njlkegdphefeellhaongiopcfgcinikh
 */
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold-webfont.woff') format('woff');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
 }
 
+body {
+  font-family: 'Roboto', Helvetica, Sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
 /*Header paragraph*/
 
 .main-header {
   display: flex;
   width: 100%;
-  padding: 15px 30px 15px;
+  padding: 15px 30px 8px;
 }
 
 .logo {
@@ -29,9 +35,12 @@
 }
 
 .header-button {
+  position: relative;
+  bottom: 6px;
+  height: 64px;
+  width: 214px;
   float: right;
-  padding: 20px 40px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   background: rgb(226, 69, 72);
@@ -51,29 +60,40 @@
 }
 
 .section-container {
-  padding: 100px 30px;
+  padding: 120px 30px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .section-footer {
-  padding: 20px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0.9;
+  padding: 30px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: Helvetica;
+}
+
+.first-segment p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.second-segment p {
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 .section-paragraph h1 {
-  padding-bottom: 15px;
-  font-size: 45px;
+  margin: 10px 0px;
+  font-size: 50px;
   line-height: 1.2;
   color: white;
 }
 
 .section-paragraph p {
-  padding-bottom: 15px;
+  margin: 15px 0px;
   font-size: 20px;
-  color: rgb(245, 245, 245);
-  opacity: 0.9;
+  font-family: Helvetica;
+  font-weight: 100;
+  color: white;
 }
 
 .footer-container {
@@ -101,6 +121,7 @@
 .input-btn {
   height: 50px;
   margin: 15px 0px 0px;
+  font-size: 16px;
   background-color: #e24548;
   color: white;
 }
@@ -108,28 +129,33 @@
 /*******************************  Middle section  *************************/
 
 .middle-section {
-  width: 100%;
-  padding: 100px 30px;
+  padding: 120px 30px;
+  font-family: Helvetica;
 }
 
-.middle-section h1 {
-  padding: 20px 0px 15px;
+.middle-section h2 {
+  margin: 11px 0px;
   font-size: 24px;
-  font-weight: 600;
+  line-height: 38px;
+  font-family: 'Roboto';
 }
-
+.middle-section-btn{
+  margin: 16px 0px;
+  height: 64px;
+  width: 214px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: rgb(226, 69, 72);
+  border-width: 0px;
+  border-radius: 35px;
+}
 .middle-section p {
-  padding-bottom: 15px;
-  line-height: 1.7;
+  margin: 11px 0px;
+  line-height: 25px;
 }
-
-.middle-img {
-  width: 70%;
-}
-
 .iphone {
   width: 100%;
-  padding: 10px 0px;
 }
 
 /******************************* Engagement section *********************************/
@@ -139,15 +165,30 @@
   padding: 120px 30px;
   background: #fcfaf8;
   text-align: center;
+  font-family: Helvetica;
 }
 
-.engagement-section h1 {
-  padding-top: 10px;
-  font-size: 20px;
+.engagement-section h3 {
+  margin: 11px 0px;
+  font-size: 21px;
+  font-family: 'Roboto';
+  line-height: 30px;
+}
+.engagement-section h4 {
+  margin: 11px 0px;
+  font-size: 21px;
+  font-family: 'Roboto';
+  line-height: 30px;
+}
+.engagement-section h5 {
+  margin: 11px 0px;
+  font-size: 21px;
+  font-family: 'Roboto';
+  line-height: 30px;
 }
 
 .engagement-section p {
-  padding: 10px 0px;
+  margin: 11px 0px;
 }
 
 .engagement-pic1 {
@@ -165,6 +206,17 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
+.footer-button{
+  justify-content: center;
+  height: 64px;
+  width: 214px;
+  font-size: 16px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  color: rgb(226, 69, 72);
+  border-width: 0px;
+  border-radius: 35px;
+}
 /******************************* Footer section ************************************/
 
 .footer {
@@ -174,31 +226,24 @@
   text-align: center;
 }
 
-.footer-img {
-  width: 60%;
-}
-
 .company-credentials {
   width: 100%;
   padding: 50px 0px;
   text-align: center;
+  font-family: Helvetica;
 }
 
 /*Popup Chat*/
 
 .open-chat {
   position: fixed;
-  right: 15px;
-  height: 60px;
-  width: 60px;
-  bottom: 0;
-  border: 3px solid #f1f1f1;
+  height: 56px;
+  width: 56px;
+  right: 25px;
+  bottom: 30px;
+  border: none;
   border-radius: 50%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQiAIeUvzCeCYyg1lTaRSbS7YgXpGXQk9cOAQ&usqp=CAU");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(33, 197, 217);
 }
 
 .close-chat {
@@ -228,6 +273,7 @@
 .chat-container {
   padding: 10px;
   font-size: 14px;
+  font-family: Helvetica;
 }
 
 .chat-support {
@@ -257,11 +303,13 @@
 
 .chat-footer textarea {
   width: 100%;
+  height: 40px;
   margin: 10px 0px;
   padding: 0px 10px;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  line-height: 20px;
 }
 
 .chat-paragraph {
@@ -274,6 +322,7 @@
   position: relative;
   text-align: center;
   color: #687882;
+  font-size: 12px;
 }
 
 @media only all and (min-width: 401px) and (max-width: 960px) {
@@ -424,10 +473,11 @@
   .middle-section-header {
     width: 50%;
   }
-  .middle-section h1 {
+  .middle-section h2 {
     width: 110%;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 38px;
   }
   .middle-section p {
     width: 120%;
