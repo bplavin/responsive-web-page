@@ -7,10 +7,13 @@
   https://chrome.google.com/webstore/detail/edge-the-web-ruler/njlkegdphefeellhaongiopcfgcinikh
 */
 @font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Bold-webfont.woff') format('woff');
+  font-family: 'Rbt';
+  src: url('Rbt.woff') format('woff');
 }
-
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Black-webfont.woff') format('woff');
+}
 * {
   margin: 0;
   padding: 0;
@@ -39,8 +42,10 @@ body {
   bottom: 6px;
   height: 64px;
   width: 214px;
+  padding: 20px 40px;
   float: right;
   font-size: 16px;
+  font-family: sans-serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
   background: rgb(226, 69, 72);
@@ -66,6 +71,8 @@ body {
 
 .section-footer {
   padding: 30px 40px;
+  font-size: 17.5px;
+  line-height: 28px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-family: Helvetica;
@@ -73,27 +80,24 @@ body {
 
 .first-segment p {
   padding-top: 10px;
-  font-size: 18px;
 }
 
 .second-segment p {
   padding-top: 10px;
-  font-size: 18px;
 }
 
 .section-paragraph h1 {
   margin: 10px 0px;
   font-size: 50px;
   line-height: 1.2;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .section-paragraph p {
   margin: 15px 0px;
   font-size: 20px;
   font-family: Helvetica;
-  font-weight: 100;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .footer-container {
@@ -113,14 +117,13 @@ body {
 
 .input-elements input[type='text'], .input-elements input[type='email'] {
   height: 50px;
-  margin: 15px 0px 0px;
+  margin: 0px 0px 15px;
   padding: 0px 10px;
   font-size: 15px;
 }
 
 .input-btn {
   height: 50px;
-  margin: 15px 0px 0px;
   font-size: 16px;
   background-color: #e24548;
   color: white;
@@ -137,7 +140,6 @@ body {
   margin: 11px 0px;
   font-size: 24px;
   line-height: 38px;
-  font-family: 'Roboto';
 }
 .middle-section-btn{
   margin: 16px 0px;
@@ -171,19 +173,16 @@ body {
 .engagement-section h3 {
   margin: 11px 0px;
   font-size: 21px;
-  font-family: 'Roboto';
   line-height: 30px;
 }
 .engagement-section h4 {
   margin: 11px 0px;
-  font-size: 21px;
-  font-family: 'Roboto';
+  font-size: 20px;
   line-height: 30px;
 }
 .engagement-section h5 {
   margin: 11px 0px;
   font-size: 21px;
-  font-family: 'Roboto';
   line-height: 30px;
 }
 
@@ -271,8 +270,9 @@ body {
 }
 
 .chat-container {
-  padding: 10px;
+  padding: 0px 16px 0px;
   font-size: 14px;
+  line-height: 21px;
   font-family: Helvetica;
 }
 
@@ -286,7 +286,7 @@ body {
 
 .form-img {
   position: relative;
-  bottom: 15px;
+  bottom: 5px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -304,11 +304,11 @@ body {
 .chat-footer textarea {
   width: 100%;
   height: 40px;
-  margin: 10px 0px;
-  padding: 0px 10px;
+  margin: 5px 0px 3px;
+  padding: 10px 10px;
   font-size: 16px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: 1px solid rgb(157, 169, 176);
+  border-radius: 6px;
   line-height: 20px;
 }
 
@@ -319,35 +319,86 @@ body {
 }
 
 .bottom-line {
+  padding: 10px;
   position: relative;
   text-align: center;
   color: #687882;
   font-size: 12px;
+  line-height: 16px;
+}
+.chat-smile {
+  position: absolute;
+  right: 30px;
+  bottom: 53px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
-@media only all and (min-width: 401px) and (max-width: 960px) {
+@media only all and (min-width: 768px) and (max-width: 1279px) {
   .logo {
-    width: 25%;
+    width: 23%;
   }
+  .main-header {
+    display: flex;
+    padding: 15px 30px 15px;
+}
   .header-button {
-    height: 90px;
-    width: 160px;
+    position: unset;
+    height: 88px;
+    width: 162px;
     margin-left: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px 40px;
+    line-height: 24px;
   }
   .section-container {
     display: flex;
   }
   .section-paragraph h1 {
-    width: 60%;
+    line-height: 60px;
+    margin: 11px 0px;
+    font-family: Helvetica;
   }
   .section-paragraph p {
-    width: 60%;
+    margin: 11px 0px;
+    height: 288px;
+    font-family: 'Rbt';
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .section-footer {
+    height: 475px;
+    width: 284px;
+    margin-left: 140px;
   }
   .first-segment {
     display: flex;
   }
+  .first-segment img {
+    height: 29px;
+    width: 29px;
+  }
+  .first-segment p {
+    margin-left: 20px;
+    padding: 0px;
+    font-size: 17px;
+  }
   .second-segment {
     display: flex;
+  }
+  .second-segment img {
+    height: 29px;
+    width: 29px;
+  }
+  .second-segment p {
+    margin-left: 20px;
+    padding: 0px;
   }
   .footer-container img {
     height: 30px;
@@ -359,27 +410,25 @@ body {
     line-height: 1.6;
     font-size: 18px;
   }
-  .middle-section {
-    width: 40%;
-  }
-  .middle-section h1 {
-    font-size: 24px;
+
+/*******************************  Middle section  *************************/
+  .middle-section h2 {
+    width: 223px;
   }
   .middle-section p {
-    width: 90%;
-  }
-  .middle-images {
-    height: 150px;
+    width: 223px;
   }
   .middle-img {
     width: 90%;
   }
   .iphone {
     position: relative;
-    /* it shouldn't be relative. You can wrap the image in the div and use flex to correctly position it */
-    bottom: 290px;
-    left: 300px;
-    width: 400px;
+    float: right;
+    bottom: 200px;
+    width: 404px;
+  }
+  .engagement-section {
+    padding: 120px 20px;
   }
   .engagement-container {
     display: flex;
@@ -394,7 +443,7 @@ body {
   .chat-popup {
     position: fixed;
     left: 400px;
-    bottom: 80px;
+    bottom: 100px;
     width: 45%;
     border-radius: 5px;
   }
@@ -415,31 +464,58 @@ body {
     border: 1px solid lightgray;
     border-radius: 5px;
   }
+  .chat-smile {
+    position: absolute;
+    right: 30px;
+    bottom: 55px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+  .widget-line {
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .chat-support p {
+    left: -90px;
+    margin: 0px;
+  }
 }
 
-@media only all and (min-width: 961px) {
+/*******************************  Full screen  *************************/
+
+@media only all and (min-width: 1280px) {
   .main-header {
     display: block;
-    padding: 15px 100px 10px;
+    padding: 15px 111px;
   }
   .logo {
-    width: 25%;
+    width: 240px;
+    height: 60px;
+  }
+  .header-button {
+    margin-top: 7px;
   }
   .section-container {
     display: flex;
-    padding: 100px;
+    padding: 120px 111px;
   }
   .section-paragraph {
     width: 50%;
   }
   .section-paragraph h1 {
-    width: 70%;
+    width: 418px;
   }
   .section-paragraph p {
-    width: 70%;
+    width: 418px;
   }
   .section-footer {
-    width: 40%;
+    width: 418px;
+    height: 382px;
     margin-left: 100px;
   }
   .footer-container {
@@ -450,37 +526,46 @@ body {
     margin-bottom: 10px;
   }
   .first-segment p {
-    font-weight: 100;
-    width: 70%;
+    padding: 0px;
+    font-size: 17px;
   }
   .first-segment img {
-    height: 50px;
-    width: 50px;
-    margin-right: 40px;
+    height: 49px;
+    width: 49px;
+    margin-right: 37px;
   }
   .second-segment {
     display: flex;
+    margin-bottom: 10px;
+  }
+  .second-segment p {
+    padding: 0px;
+    font-size: 17px;
   }
   .second-segment img {
-    height: 50px;
-    width: 50px;
-    margin-right: 40px;
+    height: 49px;
+    width: 49px;
+    margin-right: 37px;
   }
+  .input-elements input[type='text'], .input-elements input[type='email'] {
+    font-size: 18px;
+    font-family: 'Rbt';
+  }
+
+
   .middle-section {
     width: 50%;
-    padding: 100px 0px 0px 100px;
-  }
-  .middle-section-header {
-    width: 50%;
+    height: 600px;
+    padding: 120px 0px 0px 111px;
   }
   .middle-section h2 {
-    width: 110%;
+    width: 328px;
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
   }
   .middle-section p {
-    width: 120%;
+    width: 328px;
   }
   .middle-images {
     height: 150px;
@@ -495,24 +580,22 @@ body {
     width: 580px;
   }
   .engagement-section {
-    padding: 100px;
+    padding: 120px 100px;
   }
   .engagement-container {
     display: flex;
   }
   .engagement-container div {
-    margin: 0px 10px;
+    margin: 0px 13px;
   }
   .footer-img {
     width: 15%;
   }
   /* Chat-widget */
   .chat-popup {
-    display: none;
-    position: fixed;
-    left: 860px;
-    bottom: 80px;
-    width: 30%;
+    left: 890px;
+    bottom: 105px;
+    width: 352px;
     border-radius: 5px;
   }
   .chat-paragraph {
@@ -520,12 +603,32 @@ body {
     padding: 0px 10px;
     font-size: 14px;
   }
+  .chat-support p {
+    left: -90px;
+    margin: 0px;
+  }
   .chat-footer textarea {
     display: flex;
     padding: 10px 10px 0px;
     height: 40px;
   }
+  .widget-line {
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
   .bottom-line {
     font-size: 12px;
+  }
+  .chat-smile {
+    position: absolute;
+    right: 30px;
+    bottom: 48px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
   }
 }
