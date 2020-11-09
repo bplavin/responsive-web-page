@@ -442,7 +442,7 @@ body {
   /* Chat-widget */
   .chat-popup {
     position: fixed;
-    left: 400px;
+    right: 25px;
     bottom: 100px;
     width: 45%;
     border-radius: 5px;
@@ -593,7 +593,7 @@ body {
   }
   /* Chat-widget */
   .chat-popup {
-    left: 890px;
+    right: 25px;
     bottom: 105px;
     width: 352px;
     border-radius: 5px;
