@@ -31,10 +31,11 @@ body {
   display: flex;
   width: 100%;
   padding: 15px 30px 8px;
+  flex-direction: column;
 }
 
 .logo {
-  width: 100%;
+  width: 523px;
 }
 
 .header-button {
@@ -51,6 +52,8 @@ body {
   background: rgb(226, 69, 72);
   border-width: 0px;
   border-radius: 35px;
+  margin-top: 10px;
+  align-self: flex-end;
 }
 
 /*Header Section*/
@@ -127,6 +130,8 @@ body {
   font-size: 16px;
   background-color: #e24548;
   color: white;
+  border-width: 0px;
+  border-radius: 2px;
 }
 
 /*******************************  Middle section  *************************/
@@ -345,6 +350,8 @@ body {
   .main-header {
     display: flex;
     padding: 15px 30px 15px;
+    justify-content: space-between;
+    flex-direction: row;
 }
   .header-button {
     position: unset;
