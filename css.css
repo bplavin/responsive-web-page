@@ -25,6 +25,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/*******************************  Mobile screen  *************************/
+
 /*Header paragraph*/
 
 .main-header {
@@ -339,6 +342,8 @@ body {
   overflow: hidden;
   outline: none;
 }
+
+/*******************************  Planshets  *************************/
 
 @media only all and (min-width: 768px) and (max-width: 1279px) {
   .logo {
