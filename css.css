@@ -7,12 +7,12 @@
   https://chrome.google.com/webstore/detail/edge-the-web-ruler/njlkegdphefeellhaongiopcfgcinikh
 */
 @font-face {
-  font-family: 'Rbt';
-  src: url('Rbt.woff') format('woff');
+  font-family: "Rbt";
+  src: url("Rbt.woff") format("woff");
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Black-webfont.woff') format('woff');
+  font-family: "Roboto";
+  src: url("Roboto-Black-webfont.woff") format("woff");
 }
 * {
   margin: 0;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Roboto', Helvetica, Sans-serif;
+  font-family: "Roboto", Helvetica, Sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -32,10 +32,6 @@ body {
   width: 100%;
   padding: 15px 30px 8px;
   flex-direction: column;
-}
-
-.logo {
-  width: 523px;
 }
 
 .header-button {
@@ -118,7 +114,8 @@ body {
   line-height: 1.5;
 }
 
-.input-elements input[type='text'], .input-elements input[type='email'] {
+.input-elements input[type="text"],
+.input-elements input[type="email"] {
   height: 50px;
   margin: 0px 0px 15px;
   padding: 0px 10px;
@@ -146,7 +143,7 @@ body {
   font-size: 24px;
   line-height: 38px;
 }
-.middle-section-btn{
+.middle-section-btn {
   margin: 16px 0px;
   height: 64px;
   width: 214px;
@@ -210,7 +207,7 @@ body {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.footer-button{
+.footer-button {
   justify-content: center;
   height: 64px;
   width: 214px;
@@ -336,7 +333,7 @@ body {
   right: 30px;
   bottom: 53px;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -352,7 +349,7 @@ body {
     padding: 15px 30px 15px;
     justify-content: space-between;
     flex-direction: row;
-}
+  }
   .header-button {
     position: unset;
     height: 88px;
@@ -375,7 +372,7 @@ body {
   .section-paragraph p {
     margin: 11px 0px;
     height: 288px;
-    font-family: 'Rbt';
+    font-family: "Rbt";
     font-size: 24px;
     line-height: 32px;
   }
@@ -418,7 +415,7 @@ body {
     font-size: 18px;
   }
 
-/*******************************  Middle section  *************************/
+  /*******************************  Middle section  *************************/
   .middle-section h2 {
     width: 223px;
   }
@@ -554,11 +551,11 @@ body {
     width: 49px;
     margin-right: 37px;
   }
-  .input-elements input[type='text'], .input-elements input[type='email'] {
+  .input-elements input[type="text"],
+  .input-elements input[type="email"] {
     font-size: 18px;
-    font-family: 'Rbt';
+    font-family: "Rbt";
   }
-
 
   .middle-section {
     width: 50%;
@@ -632,7 +629,7 @@ body {
     right: 30px;
     bottom: 48px;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
